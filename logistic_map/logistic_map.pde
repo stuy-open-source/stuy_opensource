@@ -12,7 +12,7 @@ void gen10() {
     yvalues.add(output * 100);
     vals.add(yvalues);
     input = output;
-    r += 0.001;
+    r += 0.0001;
   }
 }
 
