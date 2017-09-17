@@ -1,3 +1,5 @@
+#basic java rng coded by Vivien Lee
+
 public class rng {
     public static void gen10(){
 	double r = 2.8;
