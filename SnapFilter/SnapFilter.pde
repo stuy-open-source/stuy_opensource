@@ -28,10 +28,8 @@ void draw() {
   stroke(0, 255, 0);
   strokeWeight(3);
   Rectangle[] faces = opencv.detect();
-  println(faces.length);
 
   for (int i = 0; i < faces.length; i++) {
-    println(faces[i].x + "," + faces[i].y);
 
     PImage img;
     if (cycle % 2 == 0) {

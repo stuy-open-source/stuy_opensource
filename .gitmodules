@@ -1,0 +1,3 @@
+[submodule "Edmond-Game"]
+	path = Edmond-Game
+	url = https://github.com/Edmond120/game.git

@@ -28,11 +28,12 @@ void setup() {
 }
 
 void draw() {
-  scale(2);
+  //scale(-1,1);
+  scale(-2,2);
   opencv.loadImage(video);
-
-  image(video, 0, 0 );
-
+  image(video, -320, 0);
+  
+  scale(-1,1);
   noFill();
   stroke(0, 0, 255);
   strokeWeight(3);
@@ -42,8 +43,8 @@ void draw() {
 
     img = loadImage("platform.png");
     img.resize(faces[i].width, img.height/faces[i].width);
-    image(img, faces[i].x, faces[i].y+100);
-    platx = faces[i].x;
+    image(img, (640-(4*faces[i].x))/2, faces[i].y+100);
+    platx = (640-(4*faces[i].x))/2;
     platy = faces[i].y+100;
     platwidth = faces[i].width;
     platheight = img.height/faces[i].width;
@@ -72,7 +73,6 @@ void draw() {
     if (Math.abs(0-ey) < 5) {
       up = !up;
     }
-    println(ex);
     if (Math.abs(0-ex) < 5 || ex > 315) {
       ballxdir = -ballxdir;
     }

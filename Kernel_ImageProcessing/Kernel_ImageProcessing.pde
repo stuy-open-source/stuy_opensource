@@ -7,7 +7,6 @@ float[][] noFilter = {
   {0, 0, 0}};
 
 //blur kernel
-
 float[][] blur = {
   {1.0/16.0, 2.0/16.0, 1.0/16.0}, 
   {2.0/16.0, 4.0/16.0, 2.0/16.0}, 
@@ -54,6 +53,11 @@ void draw() {
 }
 
 void mouseClicked() {
+  try{
+    saveFrame("screenshot.png");
+  }
+  catch (Exception e){
+  }
   mode = (mode + 1) % 4;
 }
 
