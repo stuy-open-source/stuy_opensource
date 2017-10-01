@@ -1,3 +1,9 @@
 [submodule "Edmond-Game"]
 	path = Edmond-Game
 	url = https://github.com/Edmond120/game.git
+[submodule "Unparagoned"]
+	path = Unparagoned
+	url = https://github.com/tahmed3/Unparagoned.git
+[submodule "WorldOfGUI"]
+	path = WorldOfGUI
+	url = https://github.com/akapparova/MKS22XFinalProject.git
